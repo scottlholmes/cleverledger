@@ -126,6 +126,30 @@ namespace LightSwitchApplication
         [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
         partial void PrincipalName_Changed();
 
+        /// <summary>
+        /// No Modeled Description Available
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "10.0.0.0")]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public string EmailAddress
+        {
+            get
+            {
+                return global::LightSwitchApplication.Principal.DetailsClass.GetValue(this, global::LightSwitchApplication.Principal.DetailsClass.PropertySetProperties.EmailAddress);
+            }
+            set
+            {
+                global::LightSwitchApplication.Principal.DetailsClass.SetValue(this, global::LightSwitchApplication.Principal.DetailsClass.PropertySetProperties.EmailAddress, value);
+            }
+        }
+        
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void EmailAddress_IsReadOnly(ref bool result);
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void EmailAddress_Validate(global::Microsoft.LightSwitch.EntityValidationResultsBuilder results);
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void EmailAddress_Changed();
+
         #endregion
     
         #region Details Class
@@ -224,6 +248,14 @@ namespace LightSwitchApplication
                     }
                 }
                 
+                public global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Principal, global::LightSwitchApplication.Principal.DetailsClass, string> EmailAddress
+                {
+                    get
+                    {
+                        return base.GetItem(global::LightSwitchApplication.Principal.DetailsClass.PropertySetProperties.EmailAddress) as global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Principal, global::LightSwitchApplication.Principal.DetailsClass, string>;
+                    }
+                }
+                
             }
     
             #pragma warning disable 109
@@ -232,6 +264,7 @@ namespace LightSwitchApplication
             {
                 new int Id { get; set; }
                 new string PrincipalName { get; set; }
+                new string EmailAddress { get; set; }
             }
             #pragma warning restore 109
     
@@ -315,6 +348,43 @@ namespace LightSwitchApplication
                     e.PrincipalName_Changed();
                 }
     
+                [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Principal, global::LightSwitchApplication.Principal.DetailsClass, string>.Entry
+                    EmailAddress = new global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Principal, global::LightSwitchApplication.Principal.DetailsClass, string>.Entry(
+                        "EmailAddress",
+                        global::LightSwitchApplication.Principal.DetailsClass.PropertySetProperties._EmailAddress_Stub,
+                        global::LightSwitchApplication.Principal.DetailsClass.PropertySetProperties._EmailAddress_ComputeIsReadOnly,
+                        global::LightSwitchApplication.Principal.DetailsClass.PropertySetProperties._EmailAddress_Validate,
+                        global::LightSwitchApplication.Principal.DetailsClass.PropertySetProperties._EmailAddress_GetImplementationValue,
+                        global::LightSwitchApplication.Principal.DetailsClass.PropertySetProperties._EmailAddress_SetImplementationValue,
+                        global::LightSwitchApplication.Principal.DetailsClass.PropertySetProperties._EmailAddress_OnValueChanged);
+                private static void _EmailAddress_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.Principal.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Principal, global::LightSwitchApplication.Principal.DetailsClass, string>.Data> c, global::LightSwitchApplication.Principal.DetailsClass d, object sf)
+                {
+                    c(d, ref d._EmailAddress, sf);
+                }
+                private static bool _EmailAddress_ComputeIsReadOnly(global::LightSwitchApplication.Principal e)
+                {
+                    bool result = false;
+                    e.EmailAddress_IsReadOnly(ref result);
+                    return result;
+                }
+                private static void _EmailAddress_Validate(global::LightSwitchApplication.Principal e, global::Microsoft.LightSwitch.EntityValidationResultsBuilder r)
+                {
+                    e.EmailAddress_Validate(r);
+                }
+                private static string _EmailAddress_GetImplementationValue(global::LightSwitchApplication.Principal.DetailsClass d)
+                {
+                    return d.ImplementationEntity.EmailAddress;
+                }
+                private static void _EmailAddress_SetImplementationValue(global::LightSwitchApplication.Principal.DetailsClass d, string v)
+                {
+                    d.ImplementationEntity.EmailAddress = v;
+                }
+                private static void _EmailAddress_OnValueChanged(global::LightSwitchApplication.Principal e)
+                {
+                    e.EmailAddress_Changed();
+                }
+    
             }
     
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
@@ -322,6 +392,9 @@ namespace LightSwitchApplication
             
             [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
             private global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Principal, global::LightSwitchApplication.Principal.DetailsClass, string>.Data _PrincipalName;
+            
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private global::Microsoft.LightSwitch.Details.Framework.EntityStorageProperty<global::LightSwitchApplication.Principal, global::LightSwitchApplication.Principal.DetailsClass, string>.Data _EmailAddress;
             
         }
     

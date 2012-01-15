@@ -112,11 +112,13 @@ namespace ApplicationData.Implementation
         /// </summary>
         /// <param name="id">Initial value of the Id property.</param>
         /// <param name="principalName">Initial value of the PrincipalName property.</param>
-        public static Principal CreatePrincipal(global::System.Int32 id, global::System.String principalName)
+        /// <param name="emailAddress">Initial value of the EmailAddress property.</param>
+        public static Principal CreatePrincipal(global::System.Int32 id, global::System.String principalName, global::System.String emailAddress)
         {
             Principal principal = new Principal();
             principal.Id = id;
             principal.PrincipalName = principalName;
+            principal.EmailAddress = emailAddress;
             return principal;
         }
 
@@ -173,6 +175,30 @@ namespace ApplicationData.Implementation
         private global::System.String _PrincipalName;
         partial void OnPrincipalNameChanging(global::System.String value);
         partial void OnPrincipalNameChanged();
+    
+        /// <summary>
+        /// No Metadata Documentation available.
+        /// </summary>
+        [EdmScalarPropertyAttribute(EntityKeyProperty=false, IsNullable=false)]
+        [DataMemberAttribute()]
+        public global::System.String EmailAddress
+        {
+            get
+            {
+                return _EmailAddress;
+            }
+            set
+            {
+                OnEmailAddressChanging(value);
+                ReportPropertyChanging("EmailAddress");
+                _EmailAddress = StructuralObject.SetValidValue(value, false);
+                ReportPropertyChanged("EmailAddress");
+                OnEmailAddressChanged();
+            }
+        }
+        private global::System.String _EmailAddress;
+        partial void OnEmailAddressChanging(global::System.String value);
+        partial void OnEmailAddressChanged();
 
         #endregion
     

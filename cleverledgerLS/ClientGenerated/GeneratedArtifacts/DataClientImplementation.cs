@@ -70,6 +70,27 @@ namespace LightSwitchApplication.Implementation
         }
         private string _PrincipalName;
         
+        [global::System.Runtime.Serialization.DataMember()]
+        [global::System.ComponentModel.DataAnnotations.RoundtripOriginal()]
+        public string EmailAddress
+        {
+            get
+            {
+                return this._EmailAddress;
+            }
+            set
+            {
+                if (this._EmailAddress != value)
+                {
+                    this.RaiseDataMemberChanging("EmailAddress");
+                    this.ValidateProperty("EmailAddress", value);
+                    this._EmailAddress = value;
+                    this.RaiseDataMemberChanged("EmailAddress");
+                }
+            }
+        }
+        private string _EmailAddress;
+        
         #region IEntityImplementation Members
         private global::Microsoft.LightSwitch.Internal.IEntityImplementationHost __host;
         

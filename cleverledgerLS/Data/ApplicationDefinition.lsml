@@ -170,6 +170,13 @@
           <MaxLength Value="255" />
         </EntityProperty.Attributes>
       </EntityProperty>
+      <EntityProperty Name="EmailAddress"
+                      PropertyType="Microsoft.LightSwitch.Extensions:EmailAddress">
+        <EntityProperty.Attributes>
+          <Required />
+          <MaxLength Value="255" />
+        </EntityProperty.Attributes>
+      </EntityProperty>
     </EntityType.Properties>
   </EntityType>
 
@@ -331,6 +338,17 @@
                   <ScreenExpressionTree>
                     <ChainExpression>
                       <MemberExpression Member="Principal/Properties[PrincipalName]" />
+                    </ChainExpression>
+                  </ScreenExpressionTree>
+                </ContentItem.DataSource>
+              </ContentItem>
+              <ContentItem DataType="Microsoft.LightSwitch.Extensions:EmailAddress"
+                           Kind="Value"
+                           Name="EmailAddress">
+                <ContentItem.DataSource>
+                  <ScreenExpressionTree>
+                    <ChainExpression>
+                      <MemberExpression Member="Principal/Properties[EmailAddress]" />
                     </ChainExpression>
                   </ScreenExpressionTree>
                 </ContentItem.DataSource>
