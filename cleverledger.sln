@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{ECD6D718-D1CF-4119-97F3-97C25A0DFBF9}") = "cleverledgerLS", "cleverledgerLS\cleverledgerLS.lsproj", "{1D526AA3-E906-4881-A4ED-750F51BFBC88}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+		{7B1FC562-0830-4651-8AFA-178953E65471}.0 = {1F5F7EB6-6D85-498A-ABCA-7FC255D24CE5}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1D526AA3-E906-4881-A4ED-750F51BFBC88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D526AA3-E906-4881-A4ED-750F51BFBC88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D526AA3-E906-4881-A4ED-750F51BFBC88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D526AA3-E906-4881-A4ED-750F51BFBC88}.Release|Any CPU.Build.0 = Release|Any CPU
+		{495A93BB-B0DB-4314-95A9-265736F39AA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{495A93BB-B0DB-4314-95A9-265736F39AA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{495A93BB-B0DB-4314-95A9-265736F39AA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{495A93BB-B0DB-4314-95A9-265736F39AA4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39FE2632-F51A-4525-9FC7-100D3C1A3AFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39FE2632-F51A-4525-9FC7-100D3C1A3AFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39FE2632-F51A-4525-9FC7-100D3C1A3AFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39FE2632-F51A-4525-9FC7-100D3C1A3AFE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F5F7EB6-6D85-498A-ABCA-7FC255D24CE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F5F7EB6-6D85-498A-ABCA-7FC255D24CE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F5F7EB6-6D85-498A-ABCA-7FC255D24CE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F5F7EB6-6D85-498A-ABCA-7FC255D24CE5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B1FC562-0830-4651-8AFA-178953E65471}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B1FC562-0830-4651-8AFA-178953E65471}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B1FC562-0830-4651-8AFA-178953E65471}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B1FC562-0830-4651-8AFA-178953E65471}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3F25999-FA9D-453E-938A-9BB6E9EE1264}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3F25999-FA9D-453E-938A-9BB6E9EE1264}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3F25999-FA9D-453E-938A-9BB6E9EE1264}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3F25999-FA9D-453E-938A-9BB6E9EE1264}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
