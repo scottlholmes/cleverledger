@@ -5,3 +5,9 @@ Checking out github use with Microsoft Lightswitch applications.
 Username for Azure version available upon request.
 
 https://www.cleverledger.net/
+
+Added a very simple project that tests out some ACS stuffs on Windows Azure.
+cleverledgerACS
+Web form protected by Windows Azure ACS Identity Provider.
+Tested with Windows Live ID and Google ID
+TODO: Publish this web page on Windows Azure
