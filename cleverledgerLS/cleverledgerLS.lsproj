@@ -22,7 +22,7 @@
     <RequireSecureConnection>true</RequireSecureConnection>
     <AuthenticationType>Forms</AuthenticationType>
     <ApplicationName>cleverledger</ApplicationName>
-    <AssemblyVersion>0.1.2.0</AssemblyVersion>
+    <AssemblyVersion>0.1.4.0</AssemblyVersion>
     <ServiceDefinitionFile>ServiceDefinition.csdef</ServiceDefinitionFile>
     <ServiceConfigurationFile>ServiceConfiguration.cscfg</ServiceConfigurationFile>
     <SqlExpressInstanceName>SQLEXPRESS</SqlExpressInstanceName>
@@ -43,7 +43,7 @@
     <AzureHostedService>cleverledger</AzureHostedService>
     <AzureHostedServiceLabel>Staging</AzureHostedServiceLabel>
     <AzureStorageService>cleverledger</AzureStorageService>
-    <SslCertificateThumbprint>657C4FCEDAB938854ECDE79EC451E5CDCB7E760A</SslCertificateThumbprint>
+    <SslCertificateThumbprint>AD9885A97BEF0A904EC1ADE11E0A544C9A21E4E1</SslCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>

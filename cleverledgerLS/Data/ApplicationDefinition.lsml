@@ -359,5 +359,12 @@
       </ContentItem>
     </Screen.RootContentItem>
   </Screen>
+  <Permission Name="unknownuser">
+    <Permission.Attributes>
+      <DisplayName Value="Unknown User" />
+      <Description Value="May view and in some limited cases modify data" />
+    </Permission.Attributes>
+  </Permission>
+
 
 </ModelFragment>
