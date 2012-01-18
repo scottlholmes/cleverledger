@@ -7,6 +7,8 @@ Username for Azure version available upon request.
 https://www.cleverledger.net/
 
 Added a very simple project that tests out some ACS stuffs on Windows Azure.
+Based on the following tutorial:
+https://www.windowsazure.com/en-us/develop/net/how-to-guides/access-control/
 cleverledgerACS
 Web form protected by Windows Azure ACS Identity Provider.
 Tested with Windows Live ID and Google ID
